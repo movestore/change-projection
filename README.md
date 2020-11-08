@@ -5,6 +5,8 @@ Change the projection of the movement data.
 
 ## Documentation
 
+This App reads in Movement data, transforms the geographical projection of all locations to the requested one and returns them as Movement data. Take care to provide a valid projection code in CRS format.
+
 ### Input data
 moveStack
 
