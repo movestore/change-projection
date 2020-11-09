@@ -1,7 +1,7 @@
 # Change Projection
 MoveApps
 
-Github repository: *change-projection*
+Github repository: *github.com/movestore/change-projection*
 
 ## Description
 Change the projection of the movement data. 
