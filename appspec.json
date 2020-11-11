@@ -3,9 +3,9 @@
     {
       "id": "projection",
       "name": "Projection",
-      "description": "Define the projection you want to use.",
+      "description": "Define the projection you want to transform your data into.",
       "type": "STRING",
-      "defaultValue": "+proj=moll +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +datum=WGS84 +units=m +no_defs"
+      "defaultValue": null
     }
   ],
   "dependencies": {
@@ -14,5 +14,37 @@
         "name": "move"
       }
     ]
+  },
+  "license": {
+    "key": "MIT"
+  },
+  "language": "eng",
+  "keywords": [
+    "projection",
+    "location",
+	"CRS"
+  ],
+  "people": [
+    {
+      "firstName": "Clemens",
+	  "middleInitials": null,
+      "lastName": "Hahn",
+      "email": "clemens@couchbits.com",
+      "roles": ["author", "creator", "maintainer"],
+      "affiliation": "couchbits GmbH"
+    },
+    {
+      "firstName": "Andrea",
+      "middleInitials": null,
+      "lastName": "Kölzsch",
+      "email": "akoelzsch@ab.mpg.de",
+      "roles": ["contributor", "reviewer"],
+      "orcid": "0000-0003-0193-1563",
+      "affiliation": "Max-Planck-Institute of Animal Behavior",
+      "affiliationRor": "https://ror.org/026stee22"
+    }
+  ],
+  "documentation" : {
+    "url": "https://github.com/movestore/change-projection/blob/master/README.md"
   }
 }
