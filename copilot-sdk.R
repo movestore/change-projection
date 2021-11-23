@@ -18,7 +18,7 @@ args <- list()
 
 # Add your arguments of your r function here
 #args[["username"]] = "TeamWikelski"
-#args[["password"]] = "e8kF*sdB"
+#args[["password"]] = ""
 #args[["study"]] = 	10531951 # needs to be study ID!!!
 #args[["animals"]] = c("Agnese (0CU6; e-obs 3074)", "Aivo (0A8U; e-obs 3060)", "Dace (0CN7; e-obs 3060)")
 #args[["duplicates_handling"]] = "combi" #"first" or "combi"
@@ -26,7 +26,7 @@ args <- list()
 #args[["timestamp_end"]] ="20131215000000000"
 
 args[["username"]] = "andreakoelzsch"
-args[["password"]] = "Kimba%Wauwi34"
+args[["password"]] = ""
 args[["study"]] = 		127892189 # needs to be study ID!!!
 args[["animals"]] = c("GWFG_2015_429", "GWFG_2015_431")
 args[["duplicates_handling"]] = "first" #"first" or "combi"
