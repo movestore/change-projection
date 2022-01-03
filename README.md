@@ -7,8 +7,7 @@ Github repository: *github.com/movestore/change-projection*
 Change the projection of the movement data. 
 
 ## Documentation
-
-This App reads in Movement data, transforms the geographical projection of all locations to the requested one and returns them as Movement data. Take care to provide a valid projection code in CRS format.
+This App reads in Movement data, transforms the geographical projection of all locations to the requested one and returns them as Movement data. The projection can be provided in a *EPGS*, *ESRI* or *Proj.4* format.
 
 ### Input data
 moveStack in Movebank format
@@ -20,7 +19,7 @@ moveStack in Movebank format
 none
 
 ### Parameters 
-`projection`: string variable in CRS format describing the required coordinate reference system of the geographical coordiantes. See the PROJ or PROJ.4 projection and transformation system or EPSG codes. Example: “+proj=longlat +ellps=WGS84”.
+`projection`: string stating the projection. It can be in a *EPGS* (e.g.: EPSG:4978), *ESRI* (e.g.: ESRI:54009) or *Proj.4* format (e.g.: +proj=moll +ellps=WGS84).
 
 ### Null or error handling:
 **Parameter `projection`:** If this parameter is left empty (NULL), a warning is given, the data is not transformed and returned in its original format. If an incorrect CRS code is given, the appropriate error message is given from R and the App stops.
