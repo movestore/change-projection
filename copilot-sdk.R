@@ -10,8 +10,6 @@ args <- list()
 ########################### Arguments ###########################
 # The data parameter will be added automatically if input data is available
 # The name of the field in the vector must be exaclty the same as in the r function signature
-<<<<<<< Updated upstream
-=======
 # Example:
 # rFunction = function(username, password)
 # The paramter must look like:
@@ -34,7 +32,6 @@ args[["animals"]] = c("GWFG_2015_429", "GWFG_2015_431")
 args[["duplicates_handling"]] = "first" #"first" or "combi"
 args[["timestamp_start"]] = "20200501000000000"
 args[["timestamp_end"]] ="20241201000000000"
->>>>>>> Stashed changes
 
 args[["projection"]] = "+proj=moll +ellps=WGS84" # '+proj=moll +ellps=WGS84' #'EPSG:4978', 'ESRI:54009'
 
