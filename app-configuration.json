@@ -1,5 +1,5 @@
 {
-    "projection": null,
+    "projection": "ESRI:54009",
     "center": null,
-    "units": "m"
+    "units": null
 }

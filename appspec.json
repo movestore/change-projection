@@ -10,7 +10,7 @@
      {
       "id": "center",
       "name": "Azimuthal Equidistant center",
-      "description": "Define how the center of the trajectory should be identified to project it into a Azimuthal Equidistant (aeqd) projection. Units below must be provided",
+      "description": "Define how the center of the trajectory should be identified to project it into a Azimuthal Equidistant (aeqd) projection. A unit below must be selected.",
      "type": "RADIOBUTTONS",
   "defaultValue": null,
   "options": [{
@@ -20,6 +20,10 @@
     {
       "value": "centroid",
       "displayText": "centroid (mean point position)"
+    },
+    {
+      "value": null,
+      "displayText": "non selected"
     }]
     },
      {
@@ -30,11 +34,15 @@
   "defaultValue": null,
    "options": [{
       "value": "m",
-      "displayText": "m"
+      "displayText": "meters"
     },
     {
       "value": "km",
-      "displayText": "km"
+      "displayText": "kilometers"
+    },
+    {
+      "value": null,
+      "displayText": "non selected"
     }]
     }
   ],

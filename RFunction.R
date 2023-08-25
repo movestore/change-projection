@@ -6,10 +6,11 @@ library("sf")
 
 rFunction <- function(projection,center, units, data) {
   if(is.null(center) & is.null(units)){
-    if (!is.null(projection)){
+    if(!is.null(projection)){
       result <- sf::st_transform(data, projection)
       logger.info(paste0("The data have been reprojected into: ",projection,"."))
-    } else {
+    } 
+    if(is.null(projection)){
       result <- data
       logger.warn("No projection has been provided, projection of data stays unchanged.")
     }
@@ -19,6 +20,9 @@ rFunction <- function(projection,center, units, data) {
     result <- sf::st_transform(data, aeqd_crs)
     logger.info(paste0("The data have been reprojected into a Azimuthal Equidistant (aeqd) projection in '",units,"' centered around the '",center,"' of the locations." ))
   }
-  if(!is.null(center) & is.null(units) | is.null(center) & !is.null(units)){logger.warn("Center or Unit for the Azimuthal Equidistant projection is missing, projection of data stays unchanged.")}
+  if(!is.null(center) & is.null(units) | is.null(center) & !is.null(units)){
+    result <- data
+    logger.warn("Center or Unit for the Azimuthal Equidistant projection is missing, projection of data stays unchanged.")
+    }
   return(result)
 }
