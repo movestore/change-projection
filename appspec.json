@@ -3,16 +3,45 @@
     {
       "id": "projection",
       "name": "Projection",
-      "description": "Define the projection you want to transform your data into. It can be in a EPGS (e.g.: EPSG:4978), ESRI (e.g.: ESRI:54009) or Proj.4 format (e.g.: +proj=moll +ellps=WGS84).Do NOT place quotes around the projection name.",
+      "description": "Define the projection you want to transform your data into. It can be in a EPGS (e.g.: 'EPSG:4326'), ESRI (e.g.: 'ESRI:54009') or Proj.4 format (e.g.: '+proj=longlat +datum=WGS84 +no_defs +type=crs'). Leave this setting empty if you want to use the Azimuthal Equidistant (aeqd) projection below.",
       "type": "STRING",
       "defaultValue": null
+    },
+     {
+      "id": "center",
+      "name": "Azimuthal Equidistant center",
+      "description": "Define how the center of the trajectory should be identified to project it into a Azimuthal Equidistant (aeqd) projection. Units below must be provided",
+     "type": "RADIOBUTTONS",
+  "defaultValue": null,
+  "options": [{
+      "value": "center",
+      "displayText": "center (midpoint of the range of coordinates of the trajectory)"
+    },
+    {
+      "value": "centroid",
+      "displayText": "centroid (mean point position)"
+    }]
+    },
+     {
+      "id": "units",
+      "name": "Azimuthal Equidistant units",
+      "description": "Choose the units of the Azimuthal Equidistant projection. Center or centroid above must be selected.",
+      "type": "RADIOBUTTONS",
+  "defaultValue": null,
+   "options": [{
+      "value": "m",
+      "displayText": "m"
+    },
+    {
+      "value": "km",
+      "displayText": "km"
+    }]
     }
   ],
   "dependencies": {
     "R": [
-      {
-        "name": "move"
-      }
+      {"name": "move2"},
+       {"name": "sf"}
     ]
   },
   "license": {
@@ -22,7 +51,9 @@
   "keywords": [
     "projection",
     "location",
-    "CRS"
+    "CRS", 
+    "aeqd",
+    "Azimuthal Equidistant projection"
   ],
   "people": [
     {
