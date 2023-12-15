@@ -11,7 +11,7 @@ This App transforms the geographical projection of all locations to the requeste
 
 There are two options:
 
-1. The projection can be provided in a *EPGS* (e.g.: "EPSG:4326"), *ESRI* (e.g.: "ESRI:54009") or *Proj.4* format (e.g.: "+proj=longlat +datum=WGS84 +no_defs +type=crs"). The webpages https://epsg.io/ and https://spatialreference.org/ can be of help finding a projection.
+1. The projection can be provided in a *EPGS* (e.g.: EPSG:4326), *ESRI* (e.g.: ESRI:54009) or *Proj.4* format (e.g.: +proj=longlat +datum=WGS84 +no_defs +type=crs). The webpages https://epsg.io/ and https://spatialreference.org/ can be of help finding a projection.
 
 2. Tracking data can be projected to a Azimuthal Equidistant (aeqd) projection, in `m` or `km` and centering the projection around the `center` or the `centroid` of the trajectory.
 The `center` is calculated as the midpoint of the range of coordinates of the trajectory. The `centroid` is the mean point position.

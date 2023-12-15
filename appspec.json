@@ -4,7 +4,7 @@
     {
       "id": "projection",
       "name": "Projection",
-      "description": "Define the projection you want to transform your data into. It can be in a EPGS (e.g.: 'EPSG:4326'), ESRI (e.g.: 'ESRI:54009') or Proj.4 format (e.g.: '+proj=longlat +datum=WGS84 +no_defs +type=crs'). Leave this setting empty if you want to use the Azimuthal Equidistant (aeqd) projection below.",
+      "description": "Define the projection you want to transform your data into. It can be in a EPGS (e.g.: EPSG:4326), ESRI (e.g.: ESRI:54009) or Proj.4 format (e.g.: +proj=longlat +datum=WGS84 +no_defs +type=crs). Please enter the text string without quotation marks. Leave this setting empty if you want to use the Azimuthal Equidistant (aeqd) projection below.",
       "type": "STRING",
       "defaultValue": null
     },
