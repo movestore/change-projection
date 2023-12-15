@@ -4,7 +4,7 @@ library("sf")
 ##ToDO: think if adding custom point as center makes sense
 # Note: Projection cannot be numeric as intup in appspec is a "string". Maybe it would be nice to have a mixed settings posibiltiy...
 
-rFunction <- function(projection,center, units, data) {
+rFunction <- function(projection=NULL,center=NULL, units=NULL, data) {
   if(is.null(center) & is.null(units)){
     if(!is.null(projection)){
       result <- sf::st_transform(data, projection)
